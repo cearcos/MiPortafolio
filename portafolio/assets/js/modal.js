@@ -110,23 +110,3 @@ window.onclick = function(event) {
     modal6.style.display = "none";
   }
 }
-
-var modal7 = document.getElementById("modal7");
-// Get the button that opens the modal
-var btn7 = document.getElementById("btn7");
-// When the user clicks on the button, open the modal
-btn7.onclick = function() {
-  modal7.style.display = "block";
-}
-$('.close7').click(function(){
-	$('.video7')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-  modal7.style.display = "none";  
-});
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal7) {
-    modal7.style.display = "none";
-  }
-}
-
-
